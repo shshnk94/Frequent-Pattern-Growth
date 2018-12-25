@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int cnt = 0,no_items,N,min_support = 2;
+int cnt = 0, no_items, N, min_support = 2;
 
 /* Each node contains the information of the element in the node
 and number of transactions mapped into the path. Also links to 
@@ -9,7 +9,8 @@ all the remaining items are initialised, when items not present -
 set to NULL*/
 
 struct node{
-	int info,count,label;
+
+	int info, count, label;
 	struct node **links;
 };
 
